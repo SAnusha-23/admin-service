@@ -1,45 +1,25 @@
 package com.cg.ims.dto;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-
-
 public class ProductDTO {
 
 	int productId;
-	
-	
+
 	String productName;
-	
 
 	double price;
-	
 
 	String specification;
-	
 
-	
 	int quantity;
-	
-	
+
 	CategoryDto category;
 
 	public ProductDTO() {
 		super();
 	}
 
-	public ProductDTO( int productId,
-			String productName, double price,
-			String color,
-			String dimension,
-			 String specification,
-			 String manufacturer,
-			 int quantity, CategoryDto category) {
+	public ProductDTO(int productId, String productName, double price, String color, String dimension,
+			String specification, String manufacturer, int quantity, CategoryDto category) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
@@ -99,10 +79,8 @@ public class ProductDTO {
 
 	@Override
 	public String toString() {
-		return "ProductDTO [productId=" + productId + ", productName=" + productName + ", price=" + price + ", specification=" + specification + " quantity=" + quantity + ", category=" + category + "]";
+		return "ProductDTO [productId=" + productId + ", productName=" + productName + ", price=" + price
+				+ ", specification=" + specification + " quantity=" + quantity + ", category=" + category + "]";
 	}
-	
+
 }
-
-
-

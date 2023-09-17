@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class GlobalExceptionHandler {
 	ResponseEntity<String> responseEntity;
 
-    @ExceptionHandler(CategoryException.class)
+	@ExceptionHandler(CategoryException.class)
 
-    public ResponseEntity<String> handleCategoryNotFoundException(Exception e){
+	public ResponseEntity<String> handleCategoryNotFoundException(Exception e) {
 
-        responseEntity=new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
+		responseEntity = new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 
-        return responseEntity;        
+		return responseEntity;
 
-    }
+	}
 
 }
