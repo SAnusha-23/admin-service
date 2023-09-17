@@ -18,8 +18,8 @@ public class ProductDTO {
 		super();
 	}
 
-	public ProductDTO(int productId, String productName, double price, String color, String dimension,
-			String specification, String manufacturer, int quantity, CategoryDto category) {
+	public ProductDTO(int productId, String productName, double price,
+			String specification,  int quantity, CategoryDto category) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
